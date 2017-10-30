@@ -1,0 +1,938 @@
+{
+  "day1": {
+    "time": {
+      "start": "14:00",
+      "end": "4:00"
+    },
+    "areas": [
+      {
+        "title": "ONE",
+        "sort": 10,
+        "ID": 11
+      },
+      {
+        "title": "TWO",
+        "sort": 20,
+        "ID": 12
+      },
+      {
+        "title": "THREE",
+        "sort": 30,
+        "ID": 13
+      },
+      {
+        "title": "FOUR",
+        "sort": 40,
+        "ID": 14
+      },
+      {
+        "title": "FIVE",
+        "sort": 50,
+        "ID": 15
+      }
+    ],
+    "events": [
+      {
+        "start": "15:00",
+        "end": "15:45",
+        "title": "Leif Vollebekk",
+        "area": 15,
+        "ID": 101
+      },
+      {
+        "start": "15:45",
+        "end": "16:45",
+        "title": "Amber Arcades",
+        "area": 12,
+        "ID": 103
+      },
+      {
+        "start": "16:00",
+        "end": "16:45",
+        "title": "Kelly Lee Owens",
+        "area": 13,
+        "ID": 104
+      },
+      {
+        "start": "16:45",
+        "end": "17:35",
+        "title": "Sundara Karma",
+        "area": 11,
+        "ID": 105
+      },
+      {
+        "start": "16:45",
+        "end": "17:35",
+        "title": "Sløtface",
+        "area": 15,
+        "ID": 106
+      },
+      {
+        "start": "17:35",
+        "end": "18:35",
+        "title": "Real Estate",
+        "area": 12,
+        "ID": 107
+      },
+      {
+        "start": "17:35",
+        "end": "18:35",
+        "title": "Hundred Waters",
+        "area": 13,
+        "ID": 108
+      },
+      {
+        "start": "18:35",
+        "end": "19:35",
+        "title": "Agnes Obel",
+        "area": 11,
+        "ID": 109
+      },
+      {
+        "start": "18:35",
+        "end": "19:20",
+        "title": "The Parrots",
+        "area": 15,
+        "ID": 110
+      },
+      {
+        "start": "19:35",
+        "end": "20:35",
+        "title": "Millionaire",
+        "area": 12,
+        "ID": 111
+      },
+      {
+        "start": "19:55",
+        "end": "20:40",
+        "title": "Mannequin Pussy",
+        "area": 15,
+        "ID": 113
+      },
+      {
+        "start": "20:35",
+        "end": "21:35",
+        "title": "Metronomy",
+        "area": 11,
+        "ID": 114
+      },
+      {
+        "start": "21:35",
+        "end": "22:35",
+        "title": "King Gizzard & The Lizard Wizard",
+        "area": 12,
+        "ID": 115
+      },
+      {
+        "start": "21:35",
+        "end": "22:35",
+        "title": "Jenny Hval",
+        "area": 13,
+        "ID": 116
+      },
+      {
+        "start": "21:25",
+        "end": "22:10",
+        "title": "The Mystery Lights",
+        "area": 15,
+        "ID": 117
+      },
+      {
+        "start": "22:45",
+        "end": "0:00",
+        "title": "Run The Jewels",
+        "area": 11,
+        "ID": 118
+      },
+      {
+        "start": "23:00",
+        "end": "23:30",
+        "title": "Show Me The Body",
+        "area": 15,
+        "ID": 119
+      },
+      {
+        "start": "23:30",
+        "end": "0:00",
+        "title": "Prime",
+        "area": 15,
+        "ID": 120
+      },
+      {
+        "start": "0:00",
+        "end": "1:00",
+        "title": "Weval (live)",
+        "area": 12,
+        "ID": 121
+      },
+      {
+        "start": "0:00",
+        "end": "0:45",
+        "title": "The Japanese House",
+        "area": 13,
+        "ID": 122
+      },
+      {
+        "start": "0:00",
+        "end": "0:45",
+        "title": "Section Boyz",
+        "area": 15,
+        "ID": 123
+      },
+      {
+        "start": "0:45",
+        "end": "1:15",
+        "title": "Prime",
+        "area": 15,
+        "ID": 124
+      },
+      {
+        "start": "1:00",
+        "end": "2:30",
+        "title": "Kornél KovÁcs",
+        "area": 13,
+        "ID": 125
+      },
+      {
+        "start": "1:15",
+        "end": "1:45",
+        "title": "Yung Internet",
+        "area": 15,
+        "ID": 126
+      },
+      {
+        "start": "1:45",
+        "end": "2:00",
+        "title": "Prime",
+        "area": 15,
+        "ID": 127
+      },
+      {
+        "start": "2:00",
+        "end": "2:30",
+        "title": "Joey Purp",
+        "area": 15,
+        "ID": 128
+      },
+      {
+        "start": "2:30",
+        "end": "4:00",
+        "title": "Denis Sulta",
+        "area": 13,
+        "ID": 129
+      },
+      {
+        "start": "2:30",
+        "end": "2:45",
+        "title": "Prime",
+        "area": 15,
+        "ID": 130
+      },
+      {
+        "start": "2:45",
+        "end": "3:15",
+        "title": "Tommy Cash",
+        "area": 15,
+        "ID": 131
+      },
+      {
+        "start": "3:15",
+        "end": "4:00",
+        "title": "Prime",
+        "area": 15,
+        "ID": 132
+      },
+      {
+        "start": "14:00",
+        "end": "16:30",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 133
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "title": "Spinvis (DJ Set)",
+        "area": 14,
+        "ID": 134
+      },
+      {
+        "start": "17:30",
+        "end": "19:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 137
+      },
+      {
+        "start": "19:00",
+        "end": "20:00",
+        "title": "Bob Verhoeven",
+        "area": 14,
+        "ID": 139
+      },
+      {
+        "start": "20:00",
+        "end": "21:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 143
+      },
+      {
+        "start": "21:00",
+        "end": "22:00",
+        "title": "Kremlin Disko",
+        "area": 14,
+        "ID": 135
+      },
+      {
+        "start": "22:00",
+        "end": "0:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 144
+      },
+      {
+        "start": "0:00",
+        "end": "1:00",
+        "title": "Le Guess Who?",
+        "area": 14,
+        "ID": 136
+      },
+      {
+        "start": "1:00",
+        "end": "2:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 145
+      },
+      {
+        "start": "19:35",
+        "end": "20:35",
+        "title": "Jo goes Hunting",
+        "area": 13,
+        "ID": 142
+      }
+    ]
+  },
+  "day2": {
+    "time": {
+      "start": "12:00",
+      "end": "4:00"
+    },
+    "areas": [
+      {
+        "title": 11,
+        "sort": 10,
+        "ID": 21
+      },
+      {
+        "title": 12,
+        "sort": 20,
+        "ID": 22
+      },
+      {
+        "title": 13,
+        "sort": 30,
+        "ID": 23
+      },
+      {
+        "title": 14,
+        "sort": 40,
+        "ID": 24
+      },
+      {
+        "title": 15,
+        "sort": 50,
+        "ID": 25
+      }
+    ],
+    "events": [
+      {
+        "start": "12:30",
+        "end": "13:00",
+        "title": "Wildes",
+        "area": 13,
+        "ID": 201
+      },
+      {
+        "start": "13:00",
+        "end": "13:45",
+        "title": "The Courtneys",
+        "area": 15,
+        "ID": 202
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "title": "Kim Janssen",
+        "area": 12,
+        "ID": 203
+      },
+      {
+        "start": "13:30",
+        "end": "14:30",
+        "title": "Andy Shauf",
+        "area": 13,
+        "ID": 204
+      },
+      {
+        "start": "14:30",
+        "end": "15:15",
+        "title": "The Amazons",
+        "area": 11,
+        "ID": 205
+      },
+      {
+        "start": "14:30",
+        "end": "15:15",
+        "title": "Froth",
+        "area": 15,
+        "ID": 206
+      },
+      {
+        "start": "15:15",
+        "end": "16:15",
+        "title": "Whitney",
+        "area": 12,
+        "ID": 207
+      },
+      {
+        "start": "15:15",
+        "end": "16:15",
+        "title": "Chris Cohen",
+        "area": 13,
+        "ID": 208
+      },
+      {
+        "start": "16:15",
+        "end": "17:05",
+        "title": "Circa Waves",
+        "area": 11,
+        "ID": 209
+      },
+      {
+        "start": "16:15",
+        "end": "17:05",
+        "title": "Honeyblood",
+        "area": 15,
+        "ID": 210
+      },
+      {
+        "start": "17:05",
+        "end": "18:05",
+        "title": "Cloud Nothings",
+        "area": 12,
+        "ID": 211
+      },
+      {
+        "start": "17:05",
+        "end": "18:05",
+        "title": "Thomas Dybdahl",
+        "area": 13,
+        "ID": 212
+      },
+      {
+        "start": "18:05",
+        "end": "19:05",
+        "title": "The Boxer Rebellion",
+        "area": 11,
+        "ID": 213
+      },
+      {
+        "start": "18:05",
+        "end": "19:05",
+        "title": "Mitski",
+        "area": 15,
+        "ID": 214
+      },
+      {
+        "start": "19:05",
+        "end": "20:05",
+        "title": "Wild Beasts",
+        "area": 12,
+        "ID": 215
+      },
+      {
+        "start": "19:05",
+        "end": "20:05",
+        "title": "HER",
+        "area": 13,
+        "ID": 216
+      },
+      {
+        "start": "20:05",
+        "end": "21:05",
+        "title": "George Ezra",
+        "area": 11,
+        "ID": 217
+      },
+      {
+        "start": "20:05",
+        "end": "20:50",
+        "title": "The Wytches",
+        "area": 15,
+        "ID": 218
+      },
+      {
+        "start": "21:05",
+        "end": "22:05",
+        "title": "Thomas Azier",
+        "area": 12,
+        "ID": 219
+      },
+      {
+        "start": "21:05",
+        "end": "22:05",
+        "title": "Cigarettes After Sex",
+        "area": 13,
+        "ID": 220
+      },
+      {
+        "start": "21:25",
+        "end": "22:10",
+        "title": "The Thurston Moore Group",
+        "area": 15,
+        "ID": 221
+      },
+      {
+        "start": "22:15",
+        "end": "0:00",
+        "title": "Arcade Fire",
+        "area": 11,
+        "ID": 222
+      },
+      {
+        "start": "0:00",
+        "end": "1:00",
+        "title": "Floating Points (solo live)",
+        "area": 12,
+        "ID": 224
+      },
+      {
+        "start": "0:00",
+        "end": "0:45",
+        "title": "STUFF.",
+        "area": 13,
+        "ID": 225
+      },
+      {
+        "start": "0:00",
+        "end": "0:50",
+        "title": "Kaitlyn Aurelia Smith",
+        "area": 15,
+        "ID": 226
+      },
+      {
+        "start": "0:50",
+        "end": "2:10",
+        "title": "Laurel Halo (DJ Set)",
+        "area": 15,
+        "ID": 227
+      },
+      {
+        "start": "1:00",
+        "end": "4:00",
+        "title": "Joy Orbison",
+        "area": 13,
+        "ID": 228
+      },
+      {
+        "start": "2:10",
+        "end": "3:00",
+        "title": "Vatican Shadow (live)",
+        "area": 15,
+        "ID": 229
+      },
+      {
+        "start": "12:00",
+        "end": "14:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 231
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "title": "Cloud Nothings DJ Set",
+        "area": 14,
+        "ID": 244
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 248
+      },
+      {
+        "start": "16:00",
+        "end": "17:00",
+        "title": "Piet Parra",
+        "area": 14,
+        "ID": 232
+      },
+      {
+        "start": "17:00",
+        "end": "18:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 244
+      },
+      {
+        "start": "18:00",
+        "end": "18:30",
+        "title": "Yung Nnelg",
+        "area": 14,
+        "ID": 234
+      },
+      {
+        "start": "18:30",
+        "end": "19:30",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 235
+      },
+      {
+        "start": "19:30",
+        "end": "20:30",
+        "title": "Lord Echo (DJ Set)",
+        "area": 14,
+        "ID": 236
+      },
+      {
+        "start": "20:30",
+        "end": "21:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 245
+      },
+      {
+        "start": "21:00",
+        "end": "22:00",
+        "title": "Michieltjee",
+        "area": 14,
+        "ID": 238
+      },
+      {
+        "start": "22:00",
+        "end": "0:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 246
+      },
+      {
+        "start": "0:00",
+        "end": "1:00",
+        "title": "Willie Wartaal",
+        "area": 14,
+        "ID": 240
+      },
+      {
+        "start": "1:00",
+        "end": "2:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 247
+      },
+      {
+        "start": "3:10",
+        "end": "4:00",
+        "title": "Vessel",
+        "area": 15,
+        "ID": 242
+      },
+      {
+        "start": "22:45",
+        "end": "23:30",
+        "title": "Marika Hackman",
+        "area": 15,
+        "ID": 243
+      }
+    ]
+  },
+  "day3": {
+    "time": {
+      "start": "12:00",
+      "end": "1:00"
+    },
+    "areas": [
+      {
+        "title": 11,
+        "color": "",
+        "sort": 10,
+        "ID": 31
+      },
+      {
+        "title": 12,
+        "color": "",
+        "sort": 20,
+        "ID": 32
+      },
+      {
+        "title": 13,
+        "color": "",
+        "sort": 30,
+        "ID": 33
+      },
+      {
+        "title": 14,
+        "color": "",
+        "sort": 40,
+        "ID": 34
+      },
+      {
+        "title": 15,
+        "color": "",
+        "sort": 50,
+        "ID": 35
+      }
+    ],
+    "events": [
+      {
+        "start": "12:30",
+        "end": "13:00",
+        "title": "Tall Heights",
+        "area": 13,
+        "ID": 301
+      },
+      {
+        "start": "12:30",
+        "end": "13:15",
+        "title": "The Homesick",
+        "area": 15,
+        "ID": 302
+      },
+      {
+        "start": "13:15",
+        "end": "14:15",
+        "title": "RY X",
+        "area": 12,
+        "ID": 305
+      },
+      {
+        "start": "13:30",
+        "end": "14:15",
+        "title": "Kikagaku Moyo",
+        "area": 13,
+        "ID": 306
+      },
+      {
+        "start": "14:15",
+        "end": "15:00",
+        "title": "Marlon Williams",
+        "area": 11,
+        "ID": 307
+      },
+      {
+        "start": "13:20",
+        "end": "14:00",
+        "title": "Iguana Death Cult",
+        "area": 15,
+        "ID": 308
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "title": "Aurora",
+        "area": 12,
+        "ID": 309
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "title": "Fil Bo Riva",
+        "area": 13,
+        "ID": 310
+      },
+      {
+        "start": "16:00",
+        "end": "16:50",
+        "title": "Kaleo",
+        "area": 11,
+        "ID": 311
+      },
+      {
+        "start": "16:00",
+        "end": "16:50",
+        "title": "Zeal & Ardor",
+        "area": 15,
+        "ID": 325
+      },
+      {
+        "start": "14:30",
+        "end": "15:15",
+        "title": "Canshaker Pi",
+        "area": 15,
+        "ID": 312
+      },
+      {
+        "start": "16:50",
+        "end": "17:50",
+        "title": "Arab Strap",
+        "area": 12,
+        "ID": 313
+      },
+      {
+        "start": "16:50",
+        "end": "17:50",
+        "title": "Kadhja Bonet",
+        "area": 13,
+        "ID": 314
+      },
+      {
+        "start": "17:50",
+        "end": "18:50",
+        "title": "Strand of Oaks",
+        "area": 11,
+        "ID": 315
+      },
+      {
+        "start": "17:50",
+        "end": "18:50",
+        "title": "Cass McCombs",
+        "area": 15,
+        "ID": 316
+      },
+      {
+        "start": "18:50",
+        "end": "19:50",
+        "title": "Junun ft. Shye Ben Tzur & The Rajasthan Express",
+        "area": 12,
+        "ID": 317
+      },
+      {
+        "start": "18:50",
+        "end": "19:50",
+        "title": "Henry Wu presents: The Kamaal Experience",
+        "area": 13,
+        "ID": 318
+      },
+      {
+        "start": "19:50",
+        "end": "20:50",
+        "title": "James Blake",
+        "area": 11,
+        "ID": 319
+      },
+      {
+        "start": "19:50",
+        "end": "20:50",
+        "title": "American Football",
+        "area": 15,
+        "ID": 320
+      },
+      {
+        "start": "20:50",
+        "end": "21:50",
+        "title": "Soulwax",
+        "area": 12,
+        "ID": 321
+      },
+      {
+        "start": "20:50",
+        "end": "21:50",
+        "title": "Thundercat",
+        "area": 13,
+        "ID": 322
+      },
+      {
+        "start": "22:00",
+        "end": "0:30",
+        "title": "Radiohead",
+        "area": 11,
+        "ID": 323
+      },
+      {
+        "start": "12:00",
+        "end": "13:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 334
+      },
+      {
+        "start": "13:00",
+        "end": "14:00",
+        "title": "Eppo Janssen",
+        "area": 14,
+        "ID": 324
+      },
+      {
+        "start": "14:00",
+        "end": "15:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 336
+      },
+      {
+        "start": "15:00",
+        "end": "16:00",
+        "title": "Rico (Reggae DJ Set)",
+        "area": 14,
+        "ID": 326
+      },
+      {
+        "start": "16:00",
+        "end": "16:30",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 337
+      },
+      {
+        "start": "16:30",
+        "end": "17:30",
+        "title": "DeeWee",
+        "area": 14,
+        "ID": 341
+      },
+      {
+        "start": "17:30",
+        "end": "18:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 338
+      },
+      {
+        "start": "18:00",
+        "end": "19:00",
+        "title": "Nuno Dos Santos (Tropical Set)",
+        "area": 14,
+        "ID": 330
+      },
+      {
+        "start": "19:00",
+        "end": "19:30",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 342
+      },
+      {
+        "start": "19:30",
+        "end": "20:30",
+        "title": "Canshaker Pi (DJ Set)",
+        "area": 14,
+        "ID": 328
+      },
+      {
+        "start": "20:30",
+        "end": "21:00",
+        "title": "Hosted by St. Paul",
+        "area": 14,
+        "ID": 339
+      },
+      {
+        "start": "21:00",
+        "end": "22:00",
+        "title": "Ramses3000",
+        "area": 14,
+        "ID": 332
+      },
+      {
+        "start": "22:00",
+        "end": "1:00",
+        "title": "St. Paul plays only for the lonely",
+        "area": 14,
+        "ID": 340
+      }
+    ]
+  }
+}

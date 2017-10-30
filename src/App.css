@@ -1,0 +1,27 @@
+
+h3, h4, h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 60s linear;
+    height: 80px;
+}
+
+.App-logo:nth-child(odd) {
+    animation: App-logo-spin infinite 30s linear;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
