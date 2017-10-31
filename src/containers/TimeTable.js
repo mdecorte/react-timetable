@@ -3,7 +3,6 @@ import './TimeTable.css'
 import Column from './Column'
 import fixNegativeOrder from '../static/utils/time'
 import randomColorCode from '../static/utils/color'
-// import ArtistCard from '../components/ArtistCard'
 
 class TimeTable extends Component {
 
@@ -49,8 +48,6 @@ class TimeTable extends Component {
       })
     })
   }
-
-
 
   renderColumn = (artists, key) => (
     <Column key={key} artists={artists} offsetHeight={this.time.startMinutes} height={this.time.endMinutes - this.time.startMinutes} handleClick={this.handleClick}/>
