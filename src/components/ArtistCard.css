@@ -1,8 +1,7 @@
 .ArtistCard {
     position: fixed;
     height: auto;
-    width: auto;
-    max-width: 240px;
+    width: 240px;
     background: white;
     top: 50%;
     left: 50%;
@@ -16,10 +15,12 @@
     margin: .5em;
     position: relative;
     text-align: center;
+    z-index: 5;
 }
 
 .ArtistCard img {
     position: relative;
+    z-index: 5;
 }
 
 .ArtistCard.active {
@@ -29,13 +30,15 @@
     flex-direction: column;
 }
 
-.ArtistCard.active::before {
-    content: '';
+.ArtistCard.active::after {
+    content: ' ';
     display: block;
     position: fixed;
     top: -50vh;
     right: -50vw;
     bottom: -50vh;
     left: -50vw;
-    z-index: -1;
+    background-color: inherit;
+    opacity: .2;
+
 }

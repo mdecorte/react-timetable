@@ -3,7 +3,7 @@ import './TimeTable.css'
 import Column from './Column'
 import fixNegativeOrder from '../static/utils/time'
 import randomColorCode from '../static/utils/color'
-import ArtistCard from '../components/ArtistCard'
+// import ArtistCard from '../components/ArtistCard'
 
 class TimeTable extends Component {
 
@@ -11,13 +11,11 @@ class TimeTable extends Component {
     super(props)
     this.artists = props.artists
     this.day = props.day
+    this.handleClick = props.handleClick
     this.time = fixNegativeOrder(this.day.time)
     this.artistsPerArea = this.getActs(this.day.events, this.day.areas)
     this.richArtistsPerArea = this.getActsWithPictures(this.artistsPerArea)
-    this.state = {
-      activeArtist: this.artists[0],
-      artistCardActive: false,
-    }
+
   }
 
   getActsWithPictures (stages) {
@@ -52,29 +50,16 @@ class TimeTable extends Component {
     })
   }
 
-  handleClick = (artist) => {
-    this.setState({
-      activeArtist: artist,
-      artistCardActive: !this.state.artistCardActive,
-    })
-  }
 
-  clickArtistCard = () => {
-    this.setState({
-      artistCardActive: false,
-    })
-  }
 
   renderColumn = (artists, key) => (
     <Column key={key} artists={artists} offsetHeight={this.time.startMinutes} height={this.time.endMinutes - this.time.startMinutes} handleClick={this.handleClick}/>
   )
 
   render () {
-    const {title, images, color} = this.state.activeArtist
     return (
-      <div className="TimeTable">
+      <div className='TimeTable'>
         {this.richArtistsPerArea.map(this.renderColumn)}
-        <ArtistCard artistCardActive={this.state.artistCardActive} handleClick={this.clickArtistCard} artistName={title} artistImage={images} artistColor={color}/>
       </div>
     )
   }

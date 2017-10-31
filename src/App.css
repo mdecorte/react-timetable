@@ -4,29 +4,23 @@ h3, h4, h5 {
     margin: 0;
 }
 
-.App-intro {
-    font-size: large;
-}
-
-.App-logo {
-    animation: App-logo-spin infinite 60s linear;
-    height: 80px;
-}
-
-.App-logo:nth-child(odd) {
-    animation: App-logo-spin infinite 30s linear;
+* {
+    cursor: default;
 }
 
 .tt-Title {
     text-align: center;
     text-transform: uppercase;
+    margin: 3em 1em 1em;
+    border-bottom: 3px solid black;
+    padding: .5em;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.time-table-container {
+    transition: filter .3s;
+    filter: blur(0px);
+}
+
+.time-table-container.artist-card-active {
+    filter: blur(5px);
 }

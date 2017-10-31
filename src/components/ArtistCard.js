@@ -11,10 +11,17 @@ export default function ArtistCard (props) {
 
   return (
     <div className={cN} onClick={props.handleClick} style={theStijl}>
-      <h1>{artistName}</h1>{
-      artistImage &&
-      <img src={artistImage[0]} alt={'Picture of ' + artistName}/>
-    }
+      <h1>{artistName}</h1>
+      <div className="image" style={{
+        width: '240px',
+        height: '240px',
+        backgroundColor: artistColor
+      }}>
+        {
+          artistImage &&
+          <img src={artistImage[0]} alt={'Picture of ' + artistName}/>
+        }
+      </div>
     </div>
   )
 }
