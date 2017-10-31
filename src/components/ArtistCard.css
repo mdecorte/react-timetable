@@ -2,15 +2,40 @@
     position: fixed;
     height: auto;
     width: auto;
+    max-width: 240px;
     background: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0 4em 2em;
-    border: 1px solid black;
+    padding: 0;
+    color: white;
     display: none;
 }
 
+.ArtistCard h1 {
+    margin: .5em;
+    position: relative;
+    text-align: center;
+}
+
+.ArtistCard img {
+    position: relative;
+}
+
 .ArtistCard.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ArtistCard.active::before {
+    content: '';
     display: block;
+    position: fixed;
+    top: -50vh;
+    right: -50vw;
+    bottom: -50vh;
+    left: -50vw;
+    z-index: -1;
 }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './TimeTable.css'
 import Column from './Column'
-import fixNegativeOrder from '../static/utils/times'
+import fixNegativeOrder from '../static/utils/time'
+import randomColorCode from '../static/utils/color'
 import ArtistCard from '../components/ArtistCard'
 
 class TimeTable extends Component {
@@ -11,7 +12,6 @@ class TimeTable extends Component {
     this.artists = props.artists
     this.day = props.day
     this.time = fixNegativeOrder(this.day.time)
-    console.log(this.time)
     this.artistsPerArea = this.getActs(this.day.events, this.day.areas)
     this.richArtistsPerArea = this.getActsWithPictures(this.artistsPerArea)
     this.state = {
@@ -29,10 +29,15 @@ class TimeTable extends Component {
         if (images) {
           return {
             ...event,
-            ...images
+            ...images,
           }
         }
         return event
+      }).map(artistObject => {
+        return {
+          ...artistObject,
+          color: randomColorCode(),
+        }
       })
     })
   }
@@ -43,33 +48,33 @@ class TimeTable extends Component {
         return e.area === area.ID
       }).map(x => {
         return fixNegativeOrder(x)
-      }).map(y => {
-        console.log(y.start)
-        return y
       })
     })
   }
 
-  handleClick (artist) {
+  handleClick = (artist) => {
     this.setState({
       activeArtist: artist,
       artistCardActive: !this.state.artistCardActive,
     })
   }
 
-  renderColumn (artists, key) {
-    return <Column
-      key={key}
-      artists={artists}
-      handleClick={this.handleClick.bind(this)}
-    />
+  clickArtistCard = () => {
+    this.setState({
+      artistCardActive: false,
+    })
   }
 
+  renderColumn = (artists, key) => (
+    <Column key={key} artists={artists} offsetHeight={this.time.startMinutes} height={this.time.endMinutes - this.time.startMinutes} handleClick={this.handleClick}/>
+  )
+
   render () {
+    const {title, images, color} = this.state.activeArtist
     return (
       <div className="TimeTable">
-        {/*<Column artists={this.artists} handleClick={this.handleClick.bind(this)} />*/} {this.richArtistsPerArea.map((artists, index) => this.renderColumn(artists, index))}
-        <ArtistCard artistCardActive={this.state.artistCardActive} artistName={this.state.activeArtist.title} artistImage={this.state.activeArtist.images}/>
+        {this.richArtistsPerArea.map(this.renderColumn)}
+        <ArtistCard artistCardActive={this.state.artistCardActive} handleClick={this.clickArtistCard} artistName={title} artistImage={images} artistColor={color}/>
       </div>
     )
   }

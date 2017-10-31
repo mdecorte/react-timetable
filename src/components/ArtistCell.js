@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function ArtistCell (props) {
+
   const theStijl = {
     position: 'absolute',
     display: 'flex',
@@ -9,11 +10,11 @@ export default function ArtistCell (props) {
     textAlign: 'center',
     color: 'white',
     alignItems: 'center',
-    top: props.startMinutes - 840,
-    height: props.endMinutes - props.startMinutes,
+    top: props.top,
+    height: props.height,
     width: 'calc(100% - 2em)',
     padding: '0 1em',
-    backgroundColor: 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')'
+    backgroundColor: props.color,
   }
 
   return (

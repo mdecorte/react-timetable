@@ -4,22 +4,25 @@ import ArtistCell from '../components/ArtistCell'
 
 export default function Column (props) {
 
-  console.log(props)
+  const theStijl = {
+    height: props.height,
+  }
 
   const renderArtistCell = (artist, key) => (
     <ArtistCell
       key={key}
-      start={artist.start}
-      end={artist.end}
-      startMinutes={artist.startMinutes}
-      endMinutes={artist.endMinutes}
+      start={artist}
+      end={artist}
+      top={artist.startMinutes - props.offsetHeight}
+      height={artist.endMinutes - artist.startMinutes}
+      color={artist.color}
       artistTitle={artist.title}
       handleClick={() => props.handleClick(artist)}
     />
   )
 
   return (
-    <div className="Column">
+    <div className="Column" style={theStijl}>
       {props.artists.map(renderArtistCell)}
     </div>
   )
