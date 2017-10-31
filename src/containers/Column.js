@@ -11,8 +11,6 @@ export default function Column (props) {
   const renderArtistCell = (artist, key) => (
     <ArtistCell
       key={key}
-      start={artist}
-      end={artist}
       top={artist.startMinutes - props.offsetHeight}
       height={artist.endMinutes - artist.startMinutes}
       color={artist.color}

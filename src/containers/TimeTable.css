@@ -1,4 +1,5 @@
 .TimeTable {
-   display: flex;
+    display: flex;
+    /*background-color: rgba(0, 0, 0, .9);*/
 }
 

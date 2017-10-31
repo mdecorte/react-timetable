@@ -321,29 +321,29 @@
     },
     "areas": [
       {
-        "title": 11,
+        "title": "ONE",
         "sort": 10,
-        "ID": 21
+        "ID": 11
       },
       {
-        "title": 12,
+        "title": "TWO",
         "sort": 20,
-        "ID": 22
+        "ID": 12
       },
       {
-        "title": 13,
+        "title": "THREE",
         "sort": 30,
-        "ID": 23
+        "ID": 13
       },
       {
-        "title": 14,
+        "title": "FOUR",
         "sort": 40,
-        "ID": 24
+        "ID": 14
       },
       {
-        "title": 15,
+        "title": "FIVE",
         "sort": 50,
-        "ID": 25
+        "ID": 15
       }
     ],
     "events": [
@@ -657,34 +657,29 @@
     },
     "areas": [
       {
-        "title": 11,
-        "color": "",
+        "title": "ONE",
         "sort": 10,
-        "ID": 31
+        "ID": 11
       },
       {
-        "title": 12,
-        "color": "",
+        "title": "TWO",
         "sort": 20,
-        "ID": 32
+        "ID": 12
       },
       {
-        "title": 13,
-        "color": "",
+        "title": "THREE",
         "sort": 30,
-        "ID": 33
+        "ID": 13
       },
       {
-        "title": 14,
-        "color": "",
+        "title": "FOUR",
         "sort": 40,
-        "ID": 34
+        "ID": 14
       },
       {
-        "title": 15,
-        "color": "",
+        "title": "FIVE",
         "sort": 50,
-        "ID": 35
+        "ID": 15
       }
     ],
     "events": [

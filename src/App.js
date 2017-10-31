@@ -16,7 +16,12 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+        <h2 className="tt-Title">day 1</h2>
         <TimeTable artists={this.artists} day={this.days['day1']}/>
+        <h2 className="tt-Title">day 2</h2>
+        <TimeTable artists={this.artists} day={this.days['day2']}/>
+        <h2 className="tt-Title">day 3</h2>
+        <TimeTable artists={this.artists} day={this.days['day3']}/>
       </div>
     )
   }

@@ -19,7 +19,8 @@ function timeToMinutes (time) {
   const hours = x => Number(x.split(':')[0])
   const minutes = x => Number(x.split(':')[1])
 
-  if (hours(start) < 14) {
+  // TODO: use dayStartTime instead of magic number 12
+  if (hours(start) < 12) {
     return {
       ...time,
       startMinutes: (hours(start) + 24) * 60 + minutes(start),
