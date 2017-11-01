@@ -1,3 +1,6 @@
+:root {
+    --main-color: #060685;
+}
 
 h3, h4, h5 {
     padding: 0;
@@ -12,8 +15,9 @@ h3, h4, h5 {
     text-align: center;
     text-transform: uppercase;
     margin: 3em 1em 1em;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--main-color);
     padding: .5em;
+    color: var(--main-color);
 }
 
 .time-table-container {

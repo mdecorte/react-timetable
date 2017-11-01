@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import artists from './data/artists.json'
 import days from './data/days.json'
-import './App.css'
 import ArtistCard from './components/ArtistCard'
-
 import TimeTable from './containers/TimeTable'
+import './App.css'
 
 class App extends Component {
 
@@ -23,16 +22,18 @@ class App extends Component {
       activeArtist: artist,
       artistCardActive: !this.state.artistCardActive,
     })
+    document.documentElement.style.setProperty('--main-color', artist.color)
   }
 
   clickArtistCard = () => {
     this.setState({
       artistCardActive: false,
     })
+    document.documentElement.style.setProperty('--main-color', '#060685')
   }
 
   render () {
-    const {title, images, color} = this.state.activeArtist
+    const {title, images, color, start, end} = this.state.activeArtist
     const cN = `time-table-container ${this.state.artistCardActive ? 'artist-card-active' : ''}`
     return (
       <div className='App'>
@@ -44,7 +45,14 @@ class App extends Component {
           <h2 className="tt-Title">day 3</h2>
           <TimeTable artists={this.artists} day={this.days['day3']} handleClick={this.handleClick}/>
         </div>
-        <ArtistCard artistCardActive={this.state.artistCardActive} handleClick={this.clickArtistCard} artistName={title} artistImage={images} artistColor={color}/>
+        <ArtistCard
+          artistCardActive={this.state.artistCardActive}
+          handleClick={this.clickArtistCard}
+          artistName={title}
+          artistStart={start}
+          artistEnd={end}
+          artistImage={images}
+          artistColor={color}/>
       </div>
     )
   }

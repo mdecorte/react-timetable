@@ -22,6 +22,9 @@ export default function ArtistCard (props) {
           <img src={artistImage[0]} alt={'Picture of ' + artistName}/>
         }
       </div>
+      <div className="artistInfo">
+        {props.artistStart} / {props.artistEnd}
+      </div>
     </div>
   )
 }
