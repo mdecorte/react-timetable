@@ -2,7 +2,8 @@
   "day1": {
     "time": {
       "start": "14:00",
-      "end": "4:00"
+      "end": "04:00",
+      "date": "20180608"
     },
     "areas": [
       {
@@ -119,7 +120,7 @@
       {
         "start": "21:35",
         "end": "22:35",
-        "title": "King Gizzard &#038; The Lizard Wizard",
+        "title": "King Gizzard & The Lizard Wizard",
         "area": 12,
         "ID": 115
       },
@@ -139,7 +140,7 @@
       },
       {
         "start": "22:45",
-        "end": "0:00",
+        "end": "00:00",
         "title": "Run The Jewels",
         "area": 11,
         "ID": 118
@@ -153,91 +154,91 @@
       },
       {
         "start": "23:30",
-        "end": "0:00",
+        "end": "00:00",
         "title": "Prime",
         "area": 15,
         "ID": 120
       },
       {
-        "start": "0:00",
-        "end": "1:00",
+        "start": "00:00",
+        "end": "01:00",
         "title": "Weval (live)",
         "area": 12,
         "ID": 121
       },
       {
-        "start": "0:00",
-        "end": "0:45",
+        "start": "00:00",
+        "end": "00:45",
         "title": "The Japanese House",
         "area": 13,
         "ID": 122
       },
       {
-        "start": "0:00",
-        "end": "0:45",
+        "start": "00:00",
+        "end": "00:45",
         "title": "Section Boyz",
         "area": 15,
         "ID": 123
       },
       {
-        "start": "0:45",
-        "end": "1:15",
+        "start": "00:45",
+        "end": "01:15",
         "title": "Prime",
         "area": 15,
         "ID": 124
       },
       {
-        "start": "1:00",
-        "end": "2:30",
-        "title": "Kornél KovÁcs",
+        "start": "01:00",
+        "end": "02:30",
+        "title": "Kornél Kovács",
         "area": 13,
         "ID": 125
       },
       {
-        "start": "1:15",
-        "end": "1:45",
+        "start": "01:15",
+        "end": "01:45",
         "title": "Yung Internet",
         "area": 15,
         "ID": 126
       },
       {
-        "start": "1:45",
-        "end": "2:00",
+        "start": "01:45",
+        "end": "02:00",
         "title": "Prime",
         "area": 15,
         "ID": 127
       },
       {
-        "start": "2:00",
-        "end": "2:30",
+        "start": "02:00",
+        "end": "02:30",
         "title": "Joey Purp",
         "area": 15,
         "ID": 128
       },
       {
-        "start": "2:30",
-        "end": "4:00",
+        "start": "02:30",
+        "end": "04:00",
         "title": "Denis Sulta",
         "area": 13,
         "ID": 129
       },
       {
-        "start": "2:30",
-        "end": "2:45",
+        "start": "02:30",
+        "end": "02:45",
         "title": "Prime",
         "area": 15,
         "ID": 130
       },
       {
-        "start": "2:45",
-        "end": "3:15",
+        "start": "02:45",
+        "end": "03:15",
         "title": "Tommy Cash",
         "area": 15,
         "ID": 131
       },
       {
-        "start": "3:15",
-        "end": "4:00",
+        "start": "03:15",
+        "end": "04:00",
         "title": "Prime",
         "area": 15,
         "ID": 132
@@ -286,21 +287,21 @@
       },
       {
         "start": "22:00",
-        "end": "0:00",
+        "end": "00:00",
         "title": "Hosted by St. Paul",
         "area": 14,
         "ID": 144
       },
       {
-        "start": "0:00",
-        "end": "1:00",
+        "start": "00:00",
+        "end": "01:00",
         "title": "Le Guess Who?",
         "area": 14,
         "ID": 136
       },
       {
-        "start": "1:00",
-        "end": "2:00",
+        "start": "01:00",
+        "end": "02:00",
         "title": "Hosted by St. Paul",
         "area": 14,
         "ID": 145
@@ -317,7 +318,8 @@
   "day2": {
     "time": {
       "start": "12:00",
-      "end": "4:00"
+      "end": "04:00",
+      "date": "20180609"
     },
     "areas": [
       {
@@ -496,49 +498,49 @@
       },
       {
         "start": "22:15",
-        "end": "0:00",
+        "end": "00:00",
         "title": "Arcade Fire",
         "area": 11,
         "ID": 222
       },
       {
-        "start": "0:00",
-        "end": "1:00",
+        "start": "00:00",
+        "end": "01:00",
         "title": "Floating Points (solo live)",
         "area": 12,
         "ID": 224
       },
       {
-        "start": "0:00",
-        "end": "0:45",
+        "start": "00:00",
+        "end": "00:45",
         "title": "STUFF.",
         "area": 13,
         "ID": 225
       },
       {
-        "start": "0:00",
-        "end": "0:50",
+        "start": "00:00",
+        "end": "00:50",
         "title": "Kaitlyn Aurelia Smith",
         "area": 15,
         "ID": 226
       },
       {
-        "start": "0:50",
-        "end": "2:10",
+        "start": "00:50",
+        "end": "02:10",
         "title": "Laurel Halo (DJ Set)",
         "area": 15,
         "ID": 227
       },
       {
-        "start": "1:00",
-        "end": "4:00",
+        "start": "01:00",
+        "end": "04:00",
         "title": "Joy Orbison",
         "area": 13,
         "ID": 228
       },
       {
-        "start": "2:10",
-        "end": "3:00",
+        "start": "02:10",
+        "end": "03:00",
         "title": "Vatican Shadow (live)",
         "area": 15,
         "ID": 229
@@ -615,28 +617,28 @@
       },
       {
         "start": "22:00",
-        "end": "0:00",
+        "end": "00:00",
         "title": "Hosted by St. Paul",
         "area": 14,
         "ID": 246
       },
       {
-        "start": "0:00",
-        "end": "1:00",
+        "start": "00:00",
+        "end": "01:00",
         "title": "Willie Wartaal",
         "area": 14,
         "ID": 240
       },
       {
-        "start": "1:00",
-        "end": "2:00",
+        "start": "01:00",
+        "end": "02:00",
         "title": "Hosted by St. Paul",
         "area": 14,
         "ID": 247
       },
       {
-        "start": "3:10",
-        "end": "4:00",
+        "start": "03:10",
+        "end": "04:00",
         "title": "Vessel",
         "area": 15,
         "ID": 242
@@ -653,7 +655,8 @@
   "day3": {
     "time": {
       "start": "12:00",
-      "end": "1:00"
+      "end": "01:00",
+      "date": "20180610"
     },
     "areas": [
       {
@@ -749,7 +752,7 @@
       {
         "start": "16:00",
         "end": "16:50",
-        "title": "Zeal &#038; Ardor",
+        "title": "Zeal & Ardor",
         "area": 15,
         "ID": 325
       },
@@ -791,7 +794,7 @@
       {
         "start": "18:50",
         "end": "19:50",
-        "title": "Junun ft. Shye Ben Tzur &#038; The Rajasthan Express",
+        "title": "Junun ft. Shye Ben Tzur & The Rajasthan Express",
         "area": 12,
         "ID": 317
       },
@@ -832,7 +835,7 @@
       },
       {
         "start": "22:00",
-        "end": "0:30",
+        "end": "00:30",
         "title": "Radiohead",
         "area": 11,
         "ID": 323
@@ -861,7 +864,7 @@
       {
         "start": "15:00",
         "end": "16:00",
-        "title": "Rico (Reggae DJ Set)",
+        "title": "Rico (Reggae Set)",
         "area": 14,
         "ID": 326
       },
@@ -923,7 +926,7 @@
       },
       {
         "start": "22:00",
-        "end": "1:00",
+        "end": "01:00",
         "title": "St. Paul plays only for the lonely",
         "area": 14,
         "ID": 340

@@ -11,6 +11,26 @@
     display: none;
 }
 
+.ArtistCard .artistInfo {
+    position: absolute;
+    height: auto;
+    padding: 0 1em;
+    top: 100%;
+    width: calc(100% - 2em);
+    transition: all .2s;
+    z-index: -1;
+}
+
+.ArtistCard a {
+    color: white;
+    display: block;
+    text-align: center;
+    width: calc(100% - 1.6em);
+    padding: .5em .8em;
+    background-color: var(--main-color-dark);
+}
+
+
 .ArtistCard h1 {
     margin: .5em;
     position: relative;
@@ -18,9 +38,11 @@
     z-index: 5;
 }
 
-.ArtistCard img {
+.ArtistCard .image {
     position: relative;
     z-index: 5;
+    width: 240px;
+    height: 240px;
 }
 
 .ArtistCard.active {

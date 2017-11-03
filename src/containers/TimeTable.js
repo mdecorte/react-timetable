@@ -3,6 +3,7 @@ import './TimeTable.css'
 import Column from './Column'
 import fixNegativeOrder from '../static/utils/time'
 import randomColorCode from '../static/utils/color'
+import calendar from '../static/utils/calendar'
 
 class TimeTable extends Component {
 
@@ -14,7 +15,6 @@ class TimeTable extends Component {
     this.time = fixNegativeOrder(this.day.time)
     this.artistsPerArea = this.getActs(this.day.events, this.day.areas)
     this.richArtistsPerArea = this.getActsWithPictures(this.artistsPerArea)
-
   }
 
   getActsWithPictures (stages) {
@@ -31,9 +31,18 @@ class TimeTable extends Component {
         }
         return event
       }).map(artistObject => {
+        const {color, colorDark} = randomColorCode()
         return {
           ...artistObject,
-          color: randomColorCode(),
+          area: artistObject.area - 10,
+          color: color,
+          colorDark: colorDark,
+        }
+      }).map(x => {
+        const artistDate = this.day.time.date
+        return {
+          ...x,
+          url: calendar(x, artistDate),
         }
       })
     })

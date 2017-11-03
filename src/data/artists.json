@@ -72,7 +72,7 @@
     ]
   },
   {
-    "name": "King Gizzard &#038; The Lizard Wizard",
+    "name": "King Gizzard & The Lizard Wizard",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/King-Gizzard-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/King-Gizzard-400x400.jpg",
@@ -184,6 +184,14 @@
     ]
   },
   {
+    "name": "Cloud Nothings DJ Set",
+    "images": [
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/04/Cloud-Nothings-240x240.png",
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/04/Cloud-Nothings-400x400.png",
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/04/Cloud-Nothings-900x900.png"
+    ]
+  },
+  {
     "name": "Joy Orbison",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Joy-Orbison-240x240.jpg",
@@ -192,7 +200,7 @@
     ]
   },
   {
-    "name": "Junun ft. Shye Ben Tzur &#038; The Rajasthan Express",
+    "name": "Junun ft. Shye Ben Tzur & The Rajasthan Express",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/JUNUN-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/JUNUN-400x400.jpg",
@@ -464,7 +472,7 @@
     ]
   },
   {
-    "name": "Laurel Halo (dj set)",
+    "name": "Laurel Halo (DJ Set)",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Laurel-Halo-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Laurel-Halo-400x400.jpg",
@@ -520,7 +528,7 @@
     ]
   },
   {
-    "name": "Nuno Dos Santos (Tropical DJ Set)",
+    "name": "Nuno Dos Santos (Tropical Set)",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Nuno-Dos-Santos-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Nuno-Dos-Santos-400x400.jpg",
@@ -560,7 +568,15 @@
     ]
   },
   {
-    "name": "St. Paul",
+    "name": "Hosted by St. Paul",
+    "images": [
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Paul-Nederveen1-240x240.jpg",
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Paul-Nederveen1-400x400.jpg",
+      "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Paul-Nederveen1-900x900.jpg"
+    ]
+  },
+  {
+    "name": "St. Paul plays only for the lonely",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Paul-Nederveen1-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/05/Paul-Nederveen1-400x400.jpg",
@@ -696,7 +712,7 @@
     ]
   },
   {
-    "name": "Yussef Dayes presents Black Focus",
+    "name": "Henry Wu presents: The Kamaal Experience",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Henry-Wu-240x240.png",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Henry-Wu-400x400.png",
@@ -712,7 +728,7 @@
     ]
   },
   {
-    "name": "Zeal &#038; Ardor",
+    "name": "Zeal & Ardor",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Real-Ardor-240x240.jpg",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/02/Real-Ardor-400x400.jpg",
@@ -720,7 +736,7 @@
     ]
   },
   {
-    "name": "DJ Prime",
+    "name": "Prime",
     "images": [
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/04/Prime_VR4-240x240.png",
       "http://www.bestkeptsecret.nl/2017/wp-content/uploads/2017/04/Prime_VR4-400x400.png",

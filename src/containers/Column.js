@@ -3,9 +3,8 @@ import './Column.css'
 import ArtistCell from '../components/ArtistCell'
 
 export default function Column (props) {
-
   const theStijl = {
-    height: props.height,
+    height: props.height
   }
 
   const renderArtistCell = (artist, key) => (
@@ -20,9 +19,8 @@ export default function Column (props) {
   )
 
   return (
-    <div className="Column" style={theStijl}>
+    <div className='Column' style={theStijl}>
       {props.artists.map(renderArtistCell)}
     </div>
   )
-
 }

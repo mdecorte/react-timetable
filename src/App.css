@@ -1,5 +1,7 @@
 :root {
     --main-color: #060685;
+    --main-color-dark: #040463;
+    cursor: default;
 }
 
 h3, h4, h5 {
@@ -7,8 +9,12 @@ h3, h4, h5 {
     margin: 0;
 }
 
-* {
-    cursor: default;
+p, h1, h2, h3, h4, h5 {
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
 }
 
 .tt-Title {
@@ -17,6 +23,7 @@ h3, h4, h5 {
     margin: 3em 1em 1em;
     border-bottom: 3px solid var(--main-color);
     padding: .5em;
+    font-weight: bold;
     color: var(--main-color);
 }
 

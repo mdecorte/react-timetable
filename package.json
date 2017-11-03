@@ -2,6 +2,17 @@
   "name": "react-timetable",
   "version": "0.2.0",
   "private": true,
+  "devDependencies": {
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "env": [
+      "jest",
+      "es6",
+      "browser",
+      "serviceworker"
+    ]
+  },
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -10,7 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "standard && react-scripts test --env=jsdom",
+    "fix": "standard --fix",
     "eject": "react-scripts eject"
   }
 }

@@ -1,0 +1,14 @@
+.ArtistCell {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: calc(100% - 2em);
+    padding: 0 1em;
+}
+
+.ArtistCell:hover {
+    cursor: pointer;
+}

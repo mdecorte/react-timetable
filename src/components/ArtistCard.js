@@ -1,31 +1,62 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './ArtistCard.css'
 
-export default function ArtistCard (props) {
-
-  const {artistCardActive, artistName, artistImage, artistColor} = props
-  const cN = `ArtistCard ${artistCardActive ? 'active' : ''}`
-  const theStijl = {
-    backgroundColor: artistColor,
+class ArtistCard extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      mouseInside: false,
+      panelOpen: false,
+    }
   }
 
-  return (
-    <div className={cN} onClick={props.handleClick} style={theStijl}>
-      <h1>{artistName}</h1>
-      <div className="image" style={{
-        width: '240px',
-        height: '240px',
-        backgroundColor: artistColor
-      }}>
-        {
-          artistImage &&
-          <img src={artistImage[0]} alt={'Picture of ' + artistName}/>
-        }
+  expandArtistInfo = () => {
+    this.setState({
+      mouseInside: true,
+      panelOpen: true,
+    })
+
+  }
+
+  hideArtistInfo = () => {
+    this.setState({
+      mouseInside: false,
+    })
+    setTimeout(() => {
+      if (!this.state.mouseInside) {
+        this.setState({
+          panelOpen: false,
+        })
+      }
+    }, 300)
+  }
+
+  render () {
+    const {title, images, color, url} = this.props.artist
+    const cN = `ArtistCard ${this.props.artistCardActive ? 'active' : ''}`
+    const theOffset = this.state.panelOpen ? '0' : '-100%'
+    const theStijl = {
+      backgroundColor: color
+    }
+    const theStijlTwee = {
+      backgroundColor: color,
+      transform: `translateY(${theOffset})`
+    }
+    return (
+      <div className={cN} onClick={this.props.handleClick} style={theStijl}>
+        <h1>{title}</h1>
+        <div className='image' onMouseEnter={this.expandArtistInfo} onMouseLeave={this.hideArtistInfo}>
+          {
+            images &&
+            <img src={images[0]} alt={'Picture of ' + title}/>
+          }
+          <div className='artistInfo' style={theStijlTwee}>
+            <p><a href={url} target="_blank">Add to Google Calendar</a></p>
+          </div>
+        </div>
       </div>
-      <div className="artistInfo">
-        {props.artistStart} / {props.artistEnd}
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
+export default ArtistCard

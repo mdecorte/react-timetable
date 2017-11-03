@@ -22,18 +22,19 @@ class App extends Component {
       activeArtist: artist,
       artistCardActive: !this.state.artistCardActive,
     })
-    document.documentElement.style.setProperty('--main-color', artist.color)
+    document.documentElement.style.setProperty('--main-color', artist.color, '')
+    document.documentElement.style.setProperty('--main-color-dark', artist.colorDark, '')
   }
 
   clickArtistCard = () => {
     this.setState({
       artistCardActive: false,
     })
-    document.documentElement.style.setProperty('--main-color', '#060685')
+    document.documentElement.style.setProperty('--main-color', '#060685', '')
+    document.documentElement.style.setProperty('--main-color-dark', '#040463', '')
   }
 
   render () {
-    const {title, images, color, start, end} = this.state.activeArtist
     const cN = `time-table-container ${this.state.artistCardActive ? 'artist-card-active' : ''}`
     return (
       <div className='App'>
@@ -48,11 +49,8 @@ class App extends Component {
         <ArtistCard
           artistCardActive={this.state.artistCardActive}
           handleClick={this.clickArtistCard}
-          artistName={title}
-          artistStart={start}
-          artistEnd={end}
-          artistImage={images}
-          artistColor={color}/>
+          artist={this.state.activeArtist}
+         />
       </div>
     )
   }
