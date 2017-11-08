@@ -11,6 +11,10 @@
     background-color: var(--main-color);
 }
 
+.clickArea {
+    z-index: 5;
+}
+
 .ArtistCard .artistInfo {
     position: absolute;
     height: auto;

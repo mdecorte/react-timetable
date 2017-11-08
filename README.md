@@ -37,9 +37,10 @@ Run server:
 - [x] Create time column
 - [x] Refactor time.js
 - [x] Clean up Artist Object Manipulation
+- [x] Host on Github Pages
+- [x] Tap instead of hover for touch screens
 - [ ] Set generic image placeholder
 - [ ] Use SW for offline functionality
-- [ ] Host Github Pages
 - [ ] Use artist-id for binding img's and acts
 - [ ] Drag & drop functionality?
 - [ ] Create input fields for JSON generation (Or something like Wesbos tutorial?)

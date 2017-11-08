@@ -26,7 +26,9 @@ class App extends Component {
     document.documentElement.style.setProperty('--main-color-dark', artist.colorDark, '')
   }
 
-  clickArtistCard = () => {
+  clickArtistCard = (e) => {
+    const hideArtistCard = e.target.className === 'ArtistCard active'
+    if (!hideArtistCard) return
     this.setState({
       artistCardActive: false,
     })
@@ -50,8 +52,7 @@ class App extends Component {
           artistCardActive={this.state.artistCardActive}
           handleClick={this.clickArtistCard}
           artist={this.state.activeArtist}
-
-         />
+        />
       </div>
     )
   }

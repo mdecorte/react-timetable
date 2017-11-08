@@ -9,7 +9,7 @@ export default function ArtistCell (props) {
   }
 
   return (
-    <div className='ArtistCell' onClick={props.handleClick} style={theStijl}>
+    <div className='ArtistCell' onClick={e => props.handleClick(e)} style={theStijl}>
       <h5>{props.artistTitle}</h5>
     </div>
   )

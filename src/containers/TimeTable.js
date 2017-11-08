@@ -74,7 +74,8 @@ class TimeTable extends Component {
   render () {
     return (
       <div className='TimeTable'>
-        <TimeColumn quarters={this.quartersArray} height={15 * this.multiplier}/> {this.richArtistsPerArea.map(this.renderColumn)}
+        <TimeColumn quarters={this.quartersArray} height={15 * this.multiplier}/>
+        {this.richArtistsPerArea.map(this.renderColumn)}
       </div>
     )
   }

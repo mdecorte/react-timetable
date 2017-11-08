@@ -15,7 +15,6 @@ class ArtistCard extends Component {
       mouseInside: true,
       panelOpen: true,
     })
-
   }
 
   hideArtistInfo = () => {
@@ -36,15 +35,17 @@ class ArtistCard extends Component {
 
     return (
       <div className={`ArtistCard ${this.props.artistCardActive ? 'active' : ''}`} onClick={this.props.handleClick}>
-        <h1>{title}</h1>
-        <div className='image' onMouseEnter={this.expandArtistInfo} onMouseLeave={this.hideArtistInfo}>
-          {
-            images &&
-            <img src={images[0]} alt={'Picture of ' + title}/>
-          }
-          <div className={`artistInfo ${this.state.panelOpen ? 'active' : ''}`}>
-            <p>{start} / {end}</p>
-            <p><a href={url} target="_blank">Add to Google Calendar</a></p>
+        <div className="clickArea">
+          <h1>{title}</h1>
+          <div className='image' onMouseEnter={this.expandArtistInfo} onMouseLeave={this.hideArtistInfo}>
+            {
+              images &&
+              <img src={images[0]} alt={'Picture of ' + title}/>
+            }
+            <div className={`artistInfo ${this.state.panelOpen ? 'active' : ''}`}>
+              <p>{start} / {end}</p>
+              <p><a href={url} target="_blank">Add to Google Calendar</a></p>
+            </div>
           </div>
         </div>
       </div>
