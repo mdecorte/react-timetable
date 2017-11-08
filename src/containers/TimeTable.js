@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './TimeTable.css'
+import TimeColumn from '../components/TimeColumn'
 import Column from './Column'
-import fixNegativeOrder from '../static/utils/time'
+import { fixTime, timeToQuarters } from '../static/utils/time'
 import randomColorCode from '../static/utils/color'
 import calendar from '../static/utils/calendar'
 
@@ -9,43 +10,45 @@ class TimeTable extends Component {
 
   constructor (props) {
     super(props)
-    this.artists = props.artists
-    this.day = props.day
-    this.handleClick = props.handleClick
-    this.time = fixNegativeOrder(this.day.time)
-    this.artistsPerArea = this.getActs(this.day.events, this.day.areas)
+    this.multiplier = 1.5
+    this.time = fixTime(this.props.day.time, this.multiplier)
+    this.quartersArray = timeToQuarters(this.time, this.multiplier)
+    this.artistsPerArea = this.getActs(this.props.day.events, this.props.day.areas)
     this.richArtistsPerArea = this.getActsWithPictures(this.artistsPerArea)
   }
 
   getActsWithPictures (stages) {
-    return stages.map(events => {
-      return events.map(event => {
-        const images = this.artists.find(artist => {
-          return artist.name === event.title
-        })
-        if (images) {
-          return {
-            ...event,
-            ...images,
-          }
-        }
-        return event
-      }).map(artistObject => {
-        const {color, colorDark} = randomColorCode()
-        return {
-          ...artistObject,
-          area: artistObject.area - 10,
-          color: color,
-          colorDark: colorDark,
-        }
-      }).map(x => {
-        const artistDate = this.day.time.date
-        return {
-          ...x,
-          url: calendar(x, artistDate),
-        }
-      })
+    return stages.map(events => events
+      .map(x => this.addImages(x, this.props.artists))
+      .map(this.addColor)
+      .map(x => this.addCalendarUrl(x, this.time.date))
+    )
+  }
+
+  addCalendarUrl (event, date) {
+    return {
+      ...event,
+      url: calendar(event, date),
+    }
+  }
+
+  addColor (event) {
+    const {color, colorDark} = randomColorCode()
+    return {
+      ...event,
+      color: color,
+      colorDark: colorDark,
+    }
+  }
+
+  addImages (event, artists) {
+    const images = artists.find(artist => {
+      return artist.name === event.title
     })
+    return {
+      ...event,
+      ...images,
+    }
   }
 
   getActs (events, areas) {
@@ -53,19 +56,25 @@ class TimeTable extends Component {
       return events.filter(e => {
         return e.area === area.ID
       }).map(x => {
-        return fixNegativeOrder(x)
+        return fixTime(x, this.multiplier)
       })
     })
   }
 
   renderColumn = (artists, key) => (
-    <Column key={key} artists={artists} offsetHeight={this.time.startMinutes} height={this.time.endMinutes - this.time.startMinutes} handleClick={this.handleClick}/>
+    <Column
+      key={key}
+      artists={artists}
+      offsetHeight={this.time.startMinutes}
+      height={this.time.length}
+      handleClick={this.props.handleClick}
+    />
   )
 
   render () {
     return (
       <div className='TimeTable'>
-        {this.richArtistsPerArea.map(this.renderColumn)}
+        <TimeColumn quarters={this.quartersArray} height={15 * this.multiplier}/> {this.richArtistsPerArea.map(this.renderColumn)}
       </div>
     )
   }

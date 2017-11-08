@@ -32,25 +32,18 @@ class ArtistCard extends Component {
   }
 
   render () {
-    const {title, images, color, url} = this.props.artist
-    const cN = `ArtistCard ${this.props.artistCardActive ? 'active' : ''}`
-    const theOffset = this.state.panelOpen ? '0' : '-100%'
-    const theStijl = {
-      backgroundColor: color
-    }
-    const theStijlTwee = {
-      backgroundColor: color,
-      transform: `translateY(${theOffset})`
-    }
+    const {title, images, url, start, end} = this.props.artist
+
     return (
-      <div className={cN} onClick={this.props.handleClick} style={theStijl}>
+      <div className={`ArtistCard ${this.props.artistCardActive ? 'active' : ''}`} onClick={this.props.handleClick}>
         <h1>{title}</h1>
         <div className='image' onMouseEnter={this.expandArtistInfo} onMouseLeave={this.hideArtistInfo}>
           {
             images &&
             <img src={images[0]} alt={'Picture of ' + title}/>
           }
-          <div className='artistInfo' style={theStijlTwee}>
+          <div className={`artistInfo ${this.state.panelOpen ? 'active' : ''}`}>
+            <p>{start} / {end}</p>
             <p><a href={url} target="_blank">Add to Google Calendar</a></p>
           </div>
         </div>

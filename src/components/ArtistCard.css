@@ -2,13 +2,13 @@
     position: fixed;
     height: auto;
     width: 240px;
-    background: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
     color: white;
     display: none;
+    background-color: var(--main-color);
 }
 
 .ArtistCard .artistInfo {
@@ -19,6 +19,12 @@
     width: calc(100% - 2em);
     transition: all .2s;
     z-index: -1;
+    background-color: var(--main-color);
+    transform: translateY(-100%);
+}
+
+.ArtistCard .artistInfo.active {
+    transform: translateY(0);
 }
 
 .ArtistCard a {

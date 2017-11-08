@@ -50,6 +50,7 @@ class App extends Component {
           artistCardActive={this.state.artistCardActive}
           handleClick={this.clickArtistCard}
           artist={this.state.activeArtist}
+
          />
       </div>
     )

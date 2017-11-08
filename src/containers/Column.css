@@ -5,3 +5,46 @@
     width: 20%;
 }
 
+.Column-time {
+    width: auto;
+    justify-content: space-between;
+}
+
+.timeBlock {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--main-color-dark);
+    opacity: .5;
+    padding: 0 10px;
+    font-size: 90%;
+    font-weight: bold;
+
+}
+
+.timeBlock::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: .1;
+    z-index: -1;
+}
+
+/*.timeBlock::after {*/
+    /*content: ' ';*/
+    /*display: block;*/
+    /*width: 100%;*/
+
+    /*height: 100%;*/
+    /*border-right: 5px solid var(--main-color-dark);*/
+    /*opacity: .5;*/
+/*}*/
+
+.timeBlock:nth-child(odd)::before {
+    background-color: var(--main-color);
+}

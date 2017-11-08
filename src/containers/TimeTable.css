@@ -1,5 +1,7 @@
 .TimeTable {
     display: flex;
-    /*background-color: rgba(0, 0, 0, .9);*/
+    width: 100%;
+    /*max-width: 800px;*/
+    /*overflow: hidden;*/
 }
 

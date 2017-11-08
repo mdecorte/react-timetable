@@ -3,7 +3,7 @@ export default function (event, dateDay) {
     title,
     area: location,
     start,
-    end,
+    end
   } = event
   const text = title.split(' ').join('+')
   const dates = `${dateDay}T${start.split(':')[0]}${start.split(':')[1]}00Z%2F${dateDay}T${end.split(':')[0]}${end.split(':')[1]}00Z`

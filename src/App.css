@@ -30,6 +30,9 @@ a {
 .time-table-container {
     transition: filter .3s;
     filter: blur(0px);
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .time-table-container.artist-card-active {

@@ -1,48 +1,45 @@
-function fixNegativeOrder (time) {
+const hours = x => Number(x.split(':')[0])
+const minutes = x => Number(x.split(':')[1])
+
+function fixTime (time, multiplier = 1) {
   const {start, end} = time
-  const hours = x => Number(x.split(':')[0])
-  const minutes = x => x.split(':')[1]
 
-  if (hours(start) > hours(end)) {
-    return timeToMinutes({
-      ...time,
-      start: `${hours(start)}:${minutes(start)}`,
-      end: `${Number(hours(end)) + 24}:${minutes(end)}`
-    }, 'endOverStart')
+  let startHours = hours(start)
+  let endHours = hours(start) > hours(end) ? hours(end) + 24 : hours(end)
+
+  if (startHours < 12) {
+    startHours += 24
+    endHours += 24
   }
 
-  return timeToMinutes(time)
-}
-
-function timeToMinutes (time, endOverStart) {
-  const {start, end} = time
-  const hours = x => Number(x.split(':')[0])
-  const minutes = x => Number(x.split(':')[1])
-  const rawMinutes = x => x.split(':')[1]
-
-  // TODO: use dayStartTime instead of magic number 12
-  if (hours(start) < 12) {
-    return {
-      ...time,
-      startMinutes: (hours(start) + 24) * 60 + minutes(start),
-      endMinutes: (hours(end) + 24) * 60 + minutes(end)
-    }
-  }
-
-  if (endOverStart) {
-    return {
-      ...time,
-      end: `0${Number(hours(end)) - 24}:${rawMinutes(end)}`,
-      startMinutes: hours(start) * 60 + minutes(start),
-      endMinutes: hours(end) * 60 + minutes(end)
-    }
-  }
+  const startMinutes = startHours * 60 + minutes(start)
+  const endMinutes = endHours * 60 + minutes(end)
 
   return {
     ...time,
-    startMinutes: hours(start) * 60 + minutes(start),
-    endMinutes: hours(end) * 60 + minutes(end)
+    startMinutes: startMinutes * multiplier,
+    endMinutes: endMinutes * multiplier,
+    length: (endMinutes - startMinutes) * multiplier,
   }
+
 }
 
-export default fixNegativeOrder
+function timeToQuarters (time, multiplier = 1) {
+  const {startMinutes, endMinutes} = time
+  let minutes = startMinutes / multiplier
+  const minutesArray = []
+
+  while (minutes <= endMinutes / multiplier) {
+    minutesArray.push(minutes)
+    minutes += 15
+  }
+
+  return minutesArray.map(x => {
+    const m = x % 60
+    const h = (x - m) / 60
+    return `${h < 24 ? h : h - 24}:${m === 0 ? '00' : m}`
+  })
+
+}
+
+export { fixTime, timeToQuarters }

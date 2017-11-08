@@ -33,11 +33,13 @@ Run server:
 - [x] Add additional information in ArtistCard (times/stage)
 - [x] Make ArtistCard additional information toggle
 - [x] Add to Google Calendar functionality
-- [ ] Add date to Artist Object
-- [ ] Clean up Artist Object Manipulation
+- [x] Add date to Artist Object
+- [x] Create time column
+- [x] Refactor time.js
+- [x] Clean up Artist Object Manipulation
 - [ ] Set generic image placeholder
-- [ ] Refactor time.js
 - [ ] Use SW for offline functionality
+- [ ] Host Github Pages
 - [ ] Use artist-id for binding img's and acts
 - [ ] Drag & drop functionality?
 - [ ] Create input fields for JSON generation (Or something like Wesbos tutorial?)

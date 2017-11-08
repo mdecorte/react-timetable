@@ -11,7 +11,7 @@ export default function Column (props) {
     <ArtistCell
       key={key}
       top={artist.startMinutes - props.offsetHeight}
-      height={artist.endMinutes - artist.startMinutes}
+      height={artist.length}
       color={artist.color}
       artistTitle={artist.title}
       handleClick={() => props.handleClick(artist)}
