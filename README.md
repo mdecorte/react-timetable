@@ -39,6 +39,7 @@ Run server:
 - [x] Clean up Artist Object Manipulation
 - [x] Host on Github Pages
 - [x] Tap instead of hover for touch screens
+- [ ] Style start/end time ArtistCard
 - [ ] Set generic image placeholder
 - [ ] Use SW for offline functionality
 - [ ] Use artist-id for binding img's and acts

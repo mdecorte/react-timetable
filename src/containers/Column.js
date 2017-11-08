@@ -13,6 +13,8 @@ export default function Column (props) {
       top={artist.startMinutes - props.offsetHeight}
       height={artist.length}
       color={artist.color}
+      start={artist.start}
+      end={artist.end}
       artistTitle={artist.title}
       handleClick={() => props.handleClick(artist)}
     />

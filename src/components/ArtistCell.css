@@ -1,12 +1,17 @@
 .ArtistCell {
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
     width: calc(100% - 2em);
     padding: 0 1em;
+}
+
+.ArtistCell .artist-title {
+    font-weight: 500;
 }
 
 .ArtistCell:hover {

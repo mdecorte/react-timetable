@@ -31,7 +31,7 @@ class ArtistCard extends Component {
   }
 
   render () {
-    const {title, images, url, start, end} = this.props.artist
+    const {title, images, url} = this.props.artist
 
     return (
       <div className={`ArtistCard ${this.props.artistCardActive ? 'active' : ''}`} onClick={this.props.handleClick}>
@@ -43,7 +43,6 @@ class ArtistCard extends Component {
               <img src={images[0]} alt={'Picture of ' + title}/>
             }
             <div className={`artistInfo ${this.state.panelOpen ? 'active' : ''}`}>
-              <p>{start} / {end}</p>
               <p><a href={url} target="_blank">Add to Google Calendar</a></p>
             </div>
           </div>
