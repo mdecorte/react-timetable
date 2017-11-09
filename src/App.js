@@ -37,10 +37,10 @@ class App extends Component {
   }
 
   render () {
-    const cN = `time-table-container ${this.state.artistCardActive ? 'artist-card-active' : ''}`
+    const classNaam = `time-table-container ${this.state.artistCardActive ? 'artist-card-active' : ''}`
     return (
       <div className='App'>
-        <div className={cN}>
+        <div className={classNaam}>
           <h2 className="tt-Title">day 1</h2>
           <TimeTable artists={this.artists} day={this.days['day1']} handleClick={this.handleClick}/>
           <h2 className="tt-Title">day 2</h2>
@@ -55,6 +55,7 @@ class App extends Component {
         />
       </div>
     )
+
   }
 }
 

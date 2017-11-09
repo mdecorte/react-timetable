@@ -39,7 +39,8 @@ Run server:
 - [x] Clean up Artist Object Manipulation
 - [x] Host on Github Pages
 - [x] Tap instead of hover for touch screens
-- [ ] Style start/end time ArtistCard
+- [x] Style start/end time ArtistCard
+- [ ] Add Redux
 - [ ] Set generic image placeholder
 - [ ] Use SW for offline functionality
 - [ ] Use artist-id for binding img's and acts

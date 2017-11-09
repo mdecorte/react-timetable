@@ -1,14 +1,8 @@
 import React from 'react'
 
 export default function TimeColumn (props) {
-  
-  const theStijl = {
-    height: props.height
-  }
-
-
   const timeBlock = (time, key) => (
-    <div key={key} className='timeBlock' style={theStijl}>{time}</div>
+    <div key={key} className='timeBlock' style={{height: props.height}}>{time}</div>
   )
 
   return (

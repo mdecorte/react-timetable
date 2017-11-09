@@ -19,9 +19,8 @@ function fixTime (time, multiplier = 1) {
     ...time,
     startMinutes: startMinutes * multiplier,
     endMinutes: endMinutes * multiplier,
-    length: (endMinutes - startMinutes) * multiplier,
+    length: (endMinutes - startMinutes) * multiplier
   }
-
 }
 
 function timeToQuarters (time, multiplier = 1) {
@@ -39,7 +38,6 @@ function timeToQuarters (time, multiplier = 1) {
     const h = (x - m) / 60
     return `${h < 24 ? h : h - 24}:${m === 0 ? '00' : m}`
   })
-
 }
 
 export { fixTime, timeToQuarters }

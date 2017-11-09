@@ -10,7 +10,7 @@ class TimeTable extends Component {
 
   constructor (props) {
     super(props)
-    this.multiplier = 2
+    this.multiplier = 1.5
     this.time = fixTime(this.props.day.time, this.multiplier)
     this.quartersArray = timeToQuarters(this.time, this.multiplier)
     this.artistsPerArea = this.getActs(this.props.day.events, this.props.day.areas)
