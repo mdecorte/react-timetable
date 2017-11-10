@@ -14,7 +14,17 @@ class App extends Component {
     this.state = {
       activeArtist: this.artists[0],
       artistCardActive: false,
+      favouriteArtists: [],
     }
+  }
+
+  toggleFavouriteArtist = (artist) => {
+    const ar = this.state.favouriteArtists
+    const index = ar.indexOf(artist)
+    index >= 0 ? ar.splice(index, 1) : ar.push(artist)
+    this.setState({
+      favouriteArtists: ar
+    })
   }
 
   handleClick = (artist) => {
@@ -42,11 +52,26 @@ class App extends Component {
       <div className='App'>
         <div className={classNaam}>
           <h2 className="tt-Title">day 1</h2>
-          <TimeTable artists={this.artists} day={this.days['day1']} handleClick={this.handleClick}/>
+          <TimeTable
+            artists={this.artists}
+            day={this.days['day1']}
+            handleClick={this.handleClick}
+            toggleFavouriteArtist={this.toggleFavouriteArtist}
+          />
           <h2 className="tt-Title">day 2</h2>
-          <TimeTable artists={this.artists} day={this.days['day2']} handleClick={this.handleClick}/>
+          <TimeTable
+            artists={this.artists}
+            day={this.days['day2']}
+            handleClick={this.handleClick}
+            toggleFavouriteArtist={this.toggleFavouriteArtist}
+          />
           <h2 className="tt-Title">day 3</h2>
-          <TimeTable artists={this.artists} day={this.days['day3']} handleClick={this.handleClick}/>
+          <TimeTable
+            artists={this.artists}
+            day={this.days['day3']}
+            handleClick={this.handleClick}
+            toggleFavouriteArtist={this.toggleFavouriteArtist}
+          />
         </div>
         <ArtistCard
           artistCardActive={this.state.artistCardActive}

@@ -10,7 +10,7 @@ class TimeTable extends Component {
 
   constructor (props) {
     super(props)
-    this.multiplier = 1.5
+    this.multiplier = 2
     this.time = fixTime(this.props.day.time, this.multiplier)
     this.quartersArray = timeToQuarters(this.time, this.multiplier)
     this.artistsPerArea = this.getActs(this.props.day.events, this.props.day.areas)
@@ -68,6 +68,7 @@ class TimeTable extends Component {
       offsetHeight={this.time.startMinutes}
       height={this.time.length}
       handleClick={this.props.handleClick}
+      toggleFavouriteArtist={this.props.toggleFavouriteArtist}
     />
   )
 

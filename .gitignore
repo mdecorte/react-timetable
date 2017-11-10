@@ -9,6 +9,11 @@
 # production
 /build
 
+# IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
 # misc
 .DS_Store
 .env.local

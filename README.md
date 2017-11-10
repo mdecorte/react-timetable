@@ -40,9 +40,11 @@ Run server:
 - [x] Host on Github Pages
 - [x] Tap instead of hover for touch screens
 - [x] Style start/end time ArtistCard
-- [ ] Add Redux
-- [ ] Set generic image placeholder
 - [ ] Use SW for offline functionality
+- [ ] Create personal calendar
+- [ ] Set generic image placeholder
+- [ ] Add Redux?
+- [ ] Use actual stage names from JSON
 - [ ] Use artist-id for binding img's and acts
 - [ ] Drag & drop functionality?
 - [ ] Create input fields for JSON generation (Or something like Wesbos tutorial?)

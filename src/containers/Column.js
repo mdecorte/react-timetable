@@ -17,6 +17,7 @@ export default function Column (props) {
       end={artist.end}
       artistTitle={artist.title}
       handleClick={() => props.handleClick(artist)}
+      toggleFavouriteArtist={() => props.toggleFavouriteArtist(artist)}
     />
   )
 
